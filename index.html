@@ -9,6 +9,384 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* CSS стили для футера */
+        .main-footer {
+            background-color: #111827;
+            color: #f9fafb;
+            padding: 60px 0 30px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-social a {
+            color: #00e676;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-social a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-contacts,
+        .footer-address,
+        .footer-hours {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-contacts h3,
+        .footer-address h3,
+        .footer-hours h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .footer-contacts p,
+        .footer-address p,
+        .footer-hours p {
+            color: #9ca3af;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            color: #9ca3af;
+        }
+
+        .explore-link {
+            color: #00e676;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .explore-link:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body>
+
+    <header>
+        <div class="logo">smart-ui</div>
+        <div class="menu-container">
+            <div class="box">
+                <div class="burger">
+                  <span></span>
+                </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#team">Our team</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                </ul>
+                            <div class="language-switcher">
+            <a href="#" class="lang">UA</a> | 
+            <a href="#" class="lang active">EN</a>
+        </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="main" id="hero">
+     <button class="side-button">
+        <span class="side-button-text">return message</span>
+              </button>
+      <div class="container">
+      <div class="text-content">
+        <h1 class="Header">We are</h1>
+        <h1 class="Header2">
+          <span>SMART-UI</span><span class="highlight-dot">.</span>
+        </h1>
+        <p class="min-text">You deserve easy IT, to make it easy make it SMART 👋</p>
+        <div
+          style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap"
+        >
+          <button class="btn">Get Started</button>
+        </div>
+        <div class="photo-wraper">
+          <div class="logos">
+            <picture class="pct">
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1280px)"
+                srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 320x)"
+                srcset="
+                  ./img/hotel/img-1-mob.avif    1x,
+                  ./img/hotel/img-1-mob-2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 320x)"
+                srcset="
+                  ./img/hotel/img-1-mob.webp    1x,
+                  ./img/hotel/img-1-mob-2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
+              />
+              <img
+                srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
+                src="./img/hotel/img-1-mob.jpg"
+                alt="room photo"
+              />
+            </picture>
+            <picture class="pct">
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1280px)"
+                srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 320x)"
+                srcset="
+                  ./img/hotel/img-1-mob.avif    1x,
+                  ./img/hotel/img-1-mob-2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 320x)"
+                srcset="
+                  ./img/hotel/img-1-mob.webp    1x,
+                  ./img/hotel/img-1-mob-2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
+              />
+              <img
+                srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
+                src="./img/hotel/img-1-mob.jpg"
+                alt="room photo"
+              />
+            </picture>
+            <picture class="pct">
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1280px)"
+                srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 320x)"
+                srcset="
+                  ./img/hotel/img-1-mob.avif    1x,
+                  ./img/hotel/img-1-mob-2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 320x)"
+                srcset="
+                  ./img/hotel/img-1-mob.webp    1x,
+                  ./img/hotel/img-1-mob-2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
+              />
+              <img
+                srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
+                src="./img/hotel/img-1-mob.jpg"
+                alt="room photo"
+              />
+            </picture>
+          </div>
+
+        </div>
+      </div>
+      <div class="illustration">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
+            type="image/avif"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 320x)"
+            srcset="
+              ./img/hotel/img-1-mob.avif    1x,
+              ./img/hotel/img-1-mob-2x.avif 2x
+            "
+            type="image/avif"
+          />
+          <source
+            media="(min-width: 320x)"
+            srcset="
+              ./img/hotel/img-1-mob.webp    1x,
+              ./img/hotel/img-1-mob-2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
+          />
+          <img
+            srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
+            src="./img/hotel/img-1-mob.jpg"
+            alt="room photo"
+          />
+        </picture>
+        </div>
+
+        <div class="chat-button" onclick="toggleChat()">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724715.png" alt="Chat" />
+        </div>
+        
+        <div class="chat-box" id="chatBox">
+          <textarea placeholder="Напишите сообщение..."></textarea>
+        </div>
+        
+        <div class="wraper-scroll">
+          <img
+          src="./img/scroll-horitontal 1.svg"
+          alt="Scroll Icon"
+          class="scroll-icon"
+        />
+        Scroll to explore
+      </div>
+      </div>
+      </div>
+        </div>
+
+    </section>
+    <section class="what-we-do" id="services">
+      <div class="container1">
+        <div class="content-wrapper">
+        <h2 class="text-wrapper-3">What We Do?</h2>
+        <p class="text-wrapper-2">
+          By implementing modern Internet technologies, we help our Clients to
+          achieve their goals and solve problems effectively, striving to do
+          it better than competitors do, and offering optimal effective
+          solutions taking into account the interests of each Client, with
+          sincere care and maximum possible attention.
+        </p>
+        <div class="left-column">
+          <button class="text-wrapper-4">Ask a question</button>
+        </div>
+        <div class="center-divider">
+          <span class="display">01</span>
+          <div class="line-white"></div>
+          <span class="text-wrapper">02</span>
+        </div>
+        <div class="right-column">
+          <h3 class="display-2">We have a strong background in the areas below:</h3>
+          <ul class="services-list">
+            <li>
+              -Website design and development;</li>
+            <li>-Website integration and maintenance;</li>
+            <li>-Customized e-commerce development;</li>
+            <li>-CMS development/integration.</li>
+          </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART-UI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
    
     <script src="index.js"></script>
   </head>
@@ -260,6 +638,7 @@
     </section>
     <section class="what-we-do" id="services">
       <div class="container1">
+        <div class="content-wrapper">
         <h2 class="text-wrapper-3">What We Do?</h2>
         <p class="text-wrapper-2">
           By implementing modern Internet technologies, we help our Clients to
@@ -287,6 +666,7 @@
           </ul>
           <a class="find-out-more" href="#portfolio">Find out more →</a>
         </div>
+        <div>
       </div>
     </section>
     <section class="Tech">
@@ -403,41 +783,45 @@
         </div>
       </div>
     </section>
-    <section class="Stradegy">
-      <div class="conteiner">
-        <h2>Strategy</h2>
-        <div class="text">
-        </div>
-        <div class="one-six">
+    <div class="iphone-mini">
+      <div class="overlap-group">
+        <div class="ellipse"></div>
+        <img class="line-background" src="img/" />
+        <img class="rectangle" src="img/" />
+        <div class="text-wrapper">Strategy</div>
+        <div class="group-strategy">
           <ul>
-            <li><h3><span>01</span>Strategy</h3>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p></li>
-              <li>
-                <h3><span>02</span>Design</h3>
-                <p>Not just a picture, but a convenient and intuitive interface with unique and original UI.</p>
-              </li>
-              <li>
-                <h3><span>03</span>Develope</h3>
-          <p>HTML, CSS, LESS/SASS, Bootstrap. This is the frame of your site that we will do at the highest level. Vanilla JavaScript, Jquery, WordPress, Angular, React.js. We will make your web app interactive.</p>
-              </li>
-              <li>
-                <h3><span>04</span>Support</h3>
-          <p>When the website is done and live. We will support and improve new features on the website. </p>
-              </li>
-              <li>
-                <h3><span>05</span>QA</h3>
-                <p>During the QA phase, which is the process of custom software development, we handpick and combine industry best practices and methodologies to detect bugs in the context of the environment; no line of code leaves us untested.</p>      
-              </li>
-              <li>
-                <h3><span>06</span>Launching</h3>
-                <p>The stage of detecting and correcting a bug in QA as well
-                  uploading to the server and
-                  domain connection.</p>
-              </li>
-            </ul>
+            <li class="element-strategy">
+              <div class="div"><span>01</span></div>
+              <div class="text-wrapper-2">Strategy</div>
+              <p class="display">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old.
+              </p>
+            </li>
+            <li class="element-design">
+              <div class="text-wrapper-3"><span>02</span></div>
+              <div class="text-wrapper-4">Design</div>
+              <p class="tywa">Not just a picture, but a convenient and intuitive interface with unique and original UI.</p>
+            </li>
+            <li class="element">
+              <div class="text-wrapper-5"><span>03</span></div>
+              <div class="text-wrapper-6">Develope</div>
+              <p class="display-2">
+                HTML, CSS, LESS/SASS, Bootstrap. This is the frame of your site that we will do at the highest level.
+                Vanilla JavaScript, Jquery, WordPress, Angular, React.js. We will make your web app interactive.
+              </p>
+            </li>
+          </ul>
+          <img class="arrow-icons" src="" />
+        </div>
+        <div class="page-numbers">
+          <div class="display-3"><span>01</span></div>
+          <div class="display-4"><span>02</span></div>
+          <div class="rectangle-2"></div>
         </div>
       </div>
-    </section>
+    </div>
     <section class="our-team" id="team">
       <div class="conteiner">
         <h2>Meet Our Team</h2>
@@ -893,294 +1277,509 @@
         </div>
       </div>
     </section>
-    <section class="rewiws">
-      <div class="conteiner">
-        <h2>Clients Reviews.</h2>
-        <p>We help to develop business, using complex modern effective it solutions, tools of web development and Internet marketing.</p>
-        <div class="text">
-                    <div class="center-dividerr">
-            <span class="divider-text lefter">01</span>
-            <span class="divider-text righter">02</span>
-            <h4>Static HTML pages and email templates</h4>
-            <div class="rating">
-              <img class="star" src="★" alt="">
-              <img class="star" src="★" alt="">
-              <img class="star" src="★" alt="">
-              <img class="star" src="★" alt="">
-              <img class="star">☆</img>
-              <img class="rating-value">4.8</img>
-            </div>
-            <p>"Working with Denys from SMART-UI it's straightforward. I provide the design - he provides the implementation. After a couple of iterations, the job was done. No unnecessary interactions or delays and communication is succinct and on the point. Overall I am happy with the experience and will be working with Denys and SMART-UI in the future."</p>
-            <p>review on Up Work</p>
-            <div class="center-dividerr">
-              <h4>Looking for an expert NextJs developer</h4>
-              <div class="rating">
-                <img class="star" src="★" alt="">
-                <img class="star" src="★" alt="">
-                <img class="star" src="★" alt="">
-                <img class="star" src="★" alt="">
-                <img class="star" src="★" alt="">
-                <img class="rating-value">5</img>
-              </div>
-              <p>"The team did a great job of completing the tasks with full satisfaction on time. We will work with them again."</p>
-              <p>review on Up Work</p>
-              <h4>What others are saying on Up Work</h4>
-              <p>rewiw on UpWork</p>
-              <h3>What others are saying on Up Work</h3>
-              <button>view al coments</button>
+    <section class="clients-reviews-section">
+  <div class="reviews-container">
+    <h2 class="section-title">Clients Reviews</h2>
+    
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-bubble">
+        <p class="review-content">"Working with this team was an absolute pleasure. They delivered our project ahead of schedule with exceptional quality."</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
         </div>
+        <p class="review-author">Alex Johnson, CFO at TechCorp</p>
       </div>
-    </section>
-    <section class="asked question">
-      <div class="conteiner"> 
-      <h2>Frequently asked questions</h2>
-        <div class="text">
-          <div class="accordion">
-        <div class="accordion-item">
-            <button class="accordion-button">Who did we work with?</button>
-            <div class="accordion-content">
-                <p>Most of our clients are large financial organizations and companies. You can view the list of clients who have given permission to publish works in the Recent Works block.</p>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <button class="accordion-button">What services do we offer to clients?</button>
-            <div class="accordion-content">
-                <ul>
-                    <li>Website design and development;</li>
-                    <li>Website integration and maintenance;</li>
-                    <li>Customized e-commerce development;</li>
-                    <li>CMS development/integration.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <button class="accordion-button">How is the cost of the project formed?</button>
-            <div class="accordion-content">
-                <p>The cost of services is calculated very simply: the time spent by us is multiplied by the tariff. But we can assure you that they are at the market level.</p>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <button class="accordion-button">Who owns the right to created solutions?</button>
-            <div class="accordion-content">
-                <p>As a rule, the exclusive rights to the software and the source code are transferred to the customer. Everything related to your project.</p>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <button class="accordion-button">What technologies are used?</button>
-            <div class="accordion-content">
-                <p>We can solve any problem using any technology. These are not big words, they really are. At smart-ui, a team of employees with the highest set of knowledge.</p>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <button class="accordion-button">How long does it take to develop a project?</button>
-            <div class="accordion-content">
-                <p>Velocity doubled by quality is what our Agile approach boils down to.</p>
-            </div>
-        </div>
-    </div>
-
-        </div>
-      </div>
-    </section>
-    <section class="Touch">
-      <div class="conteiner">
-        <h1>Lets Get In Touch</h1>
-        <div class="text">
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-                </div>
-                <button type="submit" class="submit-btn">sumbit</button>
-            </form>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
-<footer>
-  <div class="container">
-    <div class="logo-fotter">
-      <h2>SMART-UI</h2>
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1280px)"
-          srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
-        />
-        <source
-          media="(min-width: 320x)"
-          srcset="
-            ./img/hotel/img-1-mob.avif    1x,
-            ./img/hotel/img-1-mob-2x.avif 2x
-          "
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 320x)"
-          srcset="
-            ./img/hotel/img-1-mob.webp    1x,
-            ./img/hotel/img-1-mob-2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:320px)"
-          srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
-        />
-        <img
-          srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
-          src="./img/hotel/img-1-mob.jpg"
-          alt="room photo"
-        />
-      </picture>  
-
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1280px)"
-          srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcset="
-            ./img/hotel/img-1-tab.avif    1x,
-            ./img/hotel/img-1-tab-2x.avif 2x
-          "
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcset="
-            ./img/hotel/img-1-tab.webp    1x,
-            ./img/hotel/img-1-tab-2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1024px)"
-          srcset="./img/hotel/img-1-tab.jpg 1x, ./img/hotel/img-1-tab-2x.jpg 2x"
-        />
-        <source
-          media="(min-width: 320x)"
-          srcset="
-            ./img/hotel/img-1-mob.avif    1x,
-            ./img/hotel/img-1-mob-2x.avif 2x
-          "
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 320x)"
-          srcset="
-            ./img/hotel/img-1-mob.webp    1x,
-            ./img/hotel/img-1-mob-2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:320px)"
-          srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
-        />
-        <img
-          srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
-          src="./img/hotel/img-1-mob.jpg"
-          alt="room photo"
-        />
-      </picture>    
       
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcset="./img/hotel/img-1.avif 1x, ./img/hotel/img-1-2x.avif 2x"
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcset="./img/hotel/img-1.webp 1x, ./img/hotel/img-1-2x.webp 2x"
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1280px)"
-          srcset="./img/hotel/img-1.jpg 1x, ./img/hotel/img-1-2x.jpg 2x"
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcset="
-            ./img/hotel/img-1-tab.avif    1x,
-            ./img/hotel/img-1-tab-2x.avif 2x
-          "
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcset="
-            ./img/hotel/img-1-tab.webp    1x,
-            ./img/hotel/img-1-tab-2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1024px)"
-          srcset="./img/hotel/img-1-tab.jpg 1x, ./img/hotel/img-1-tab-2x.jpg 2x"
-        />
-        <source
-          media="(min-width: 320x)"
-          srcset="
-            ./img/hotel/img-1-mob.avif    1x,
-            ./img/hotel/img-1-mob-2x.avif 2x
-          "
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 320x)"
-          srcset="
-            ./img/hotel/img-1-mob.webp    1x,
-            ./img/hotel/img-1-mob-2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:320px)"
-          srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob-2x.jpg 2x"
-        />
-        <img
-          srcset="./img/hotel/img-1-mob.jpg 1x, ./img/hotel/img-1-mob.jpg 2x"
-          src="./img/hotel/img-1-mob.jpg"
-          alt="room photo"
-        />
-      </picture>
+      <!-- Review 2 -->
+      <div class="review-bubble">
+        <p class="review-content">"The attention to detail and creative solutions provided by this agency helped us achieve 200% growth in our digital presence."</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <p class="review-author">Sarah Williams, Marketing Director</p>
+      </div>
+      
+      <!-- Review 3 -->
+      <div class="review-bubble">
+        <p class="review-content">"Reliable, professional, and innovative. We've been working with them for 3 years and couldn't be happier with the results."</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+        </div>
+        <p class="review-author">Michael Brown, CEO at FinStart</p>
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="faq-chat-section">
+  <div class="faq-container">
+    <h1 class="faq-main-title">FAQ</h1>
+    
+    <!-- First Message -->
+    <div class="message-bubble first">
+      <h2 class="message-question">Who did we work with?</h2>
+      <p class="message-answer">Most of our clients are large financial organizations and companies. You can view the list of clients who have given permission to publish works in the <strong>Recent Works</strong> block.</p>
+      <div class="message-tail"></div>
+    </div>
+    
+    <!-- Second Message -->
+    <div class="message-bubble">
+      <h2 class="message-question">What services do we offer to clients?</h2>
+      <div class="message-tail"></div>
+    </div>
+    
+    <!-- Nested Question -->
+    <div class="message-bubble nested">
+      <p class="message-text">How is the cost of the project formed? <span class="plus">+</span></p>
+      <div class="message-tail"></div>
+    </div>
+    
+    <!-- Third Message -->
+    <div class="message-bubble">
+      <h2 class="message-question">Who owns the right to created solutions?</h2>
+      <div class="message-tail"></div>
+    </div>
+    
+    <!-- Nested Questions -->
+    <div class="message-bubble nested">
+      <p class="message-text">What technologies are used? <span class="plus">+</span></p>
+      <div class="message-tail"></div>
+    </div>
+    
+    <div class="message-bubble nested last">
+      <p class="message-text">How long does it take to develop a project? <span class="plus">+</span></p>
+      <div class="message-tail"></div>
+    </div>
+  </div>
+</section>
 
-      <p>our contact</p>
-      <p>our address</p>
-      <p>our hours</p>
-      <p>
-        +380634503578
-        kulich@gmail.com
-      </p>
-      <p>
-        Kharkov City, Ukraine14, Lopatyns`kyi Ln
-      </p>
-      <p>
-        Monday-Friday: 09.00-23.00Saturday-Sanday: 11.00-16.00
-      </p>
+<style>
+/* Base Styles */
+.faq-chat-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.faq-main-title {
+  font-size: 72px;
+  font-weight: 800;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: -2px;
+}
+
+/* Message Bubble Styles */
+.message-bubble {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-bottom: 25px;
+  max-width: 85%;
+}
+
+.message-bubble.first {
+  margin-top: 30px;
+}
+
+.message-bubble.nested {
+  margin-left: 60px;
+  max-width: 75%;
+  background-color: #f1f3f5;
+}
+
+.message-bubble.last {
+  margin-bottom: 50px;
+}
+
+/* Message Content */
+.message-question {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 10px 0;
+}
+
+.message-answer {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+.message-answer strong {
+  font-weight: 600;
+}
+
+.message-text {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Plus Sign */
+.plus {
+  color: #10b981;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* Message Tail */
+.message-tail {
+  position: absolute;
+  bottom: -10px;
+  left: 40px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+}
+
+.message-bubble.nested .message-tail {
+  border-top-color: #f1f3f5;
+  left: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-main-title {
+    font-size: 60px;
+  }
+  
+  .message-bubble {
+    padding: 25px;
+    max-width: 90%;
+  }
+  
+  .message-bubble.nested {
+    margin-left: 40px;
+    max-width: 80%;
+  }
+  
+  .message-question {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-main-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  
+  .message-bubble {
+    padding: 20px;
+    max-width: 95%;
+  }
+  
+  .message-bubble.nested {
+    margin-left: 30px;
+    max-width: 85%;
+  }
+  
+  .message-question {
+    font-size: 18px;
+  }
+  
+  .message-text, .message-answer {
+    font-size: 15px;
+  }
+  
+  .message-tail {
+    left: 30px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #ffffff;
+  }
+  
+  .message-bubble.nested .message-tail {
+    left: 20px;
+  }
+}
+</style>
+
+        </div>
+      </div>
+   <section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-titles">
+      <h2 class="contact-main-title">Let's Get</h2>
+      <h3 class="contact-subtitle">In Touch</h3>
+    </div>
+    
+    <div class="contact-content">
+      <div class="contact-text">
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        
+        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+        
+        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Contact Section Styles */
+.contact-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Titles Styling */
+.contact-titles {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-main-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.contact-subtitle {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #111827;
+}
+
+/* Text Content Styling */
+.contact-content {
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.contact-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.contact-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .contact-main-title {
+    font-size: 36px;
+  }
+  
+  .contact-subtitle {
+    font-size: 28px;
+  }
+  
+  .contact-content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-main-title {
+    font-size: 32px;
+  }
+  
+  .contact-subtitle {
+    font-size: 24px;
+  }
+  
+  .contact-content {
+    padding: 20px;
+  }
+  
+  .contact-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+</style>
+    </style>
+<footer class="smart-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2>smart-ui</h2>
+        <div class="footer-social">
+          <a href="#">Clutch</a>
+          <a href="#">Upwork</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>Our Contact</h3>
+          <p>+38 (093) 504 83 34</p>
+          <p>info@smart-ui.pro</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Our Address</h3>
+          <p>Kontex City, Ukraine</p>
+          <p>IA_topchym3 byi in</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Working hours</h3>
+          <p>Monday-Friday: 09:00-23:00</p>
+          <p>Saturday-Sunday: 10:00-16:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
       <p>© 2022 Smart-UI. All Rights Reserved</p>
-      <img src="" alt="">
-      <button>back to top</button>
+      <a href="#" class="explore-btn">Switch to explore</a>
     </div>
   </div>
 </footer>
+
+<style>
+.smart-footer {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Inter', sans-serif;
+  padding: 60px 0 30px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.footer-social a:hover {
+  opacity: 0.8;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.footer-col p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.explore-btn {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.explore-btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+</style>
+</style>
